@@ -38,7 +38,7 @@ def Trapezoidal(f):
 #                                                                                                             #
 # Creates a delta by taking the difference between point a and be, then dividing by the number of partitions. #
 # As we increment by delta, each index value, i, will be stored in the t_vals array denoting time and each    #
-# value evaluated by the function, F(i), will be stored in the y_vals.                                     #
+# value evaluated by the function, F(i), will be stored in the y_vals.                                        #
 #                                                                                                             #
 ###############################################################################################################
 y_vals = [];
