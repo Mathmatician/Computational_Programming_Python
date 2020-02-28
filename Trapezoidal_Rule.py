@@ -1,7 +1,7 @@
 # Author: Jerome Richards
 # Trapezoidal Rule
 #
-# Description: Utilzes the trapezoidal rule to find the area under of an acceleration function. The function is F(t) = 9.8
+# Description: Utilzes the trapezoidal rule to find the area under an acceleration function. The function is F(t) = 9.8
 
 import numpy as np
 import matplotlib.pyplot as plt
