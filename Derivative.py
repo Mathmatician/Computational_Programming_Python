@@ -3,9 +3,8 @@
 #
 # Description Takes the derivative of the given function, F(x), and compares it in a plot with the origional function.
 
-import numpy as np
-import matplotlib.pyplot as plt
 import math
+import matplotlib.pyplot as plt
 
 
 # Name: The inquired function, F
@@ -16,44 +15,16 @@ def F(x):
 
 
 
+
 # Name: The derivative of the inquired function, F.
 # Parameters: a function, f, a floating point value x, and the derivative n (n determines the amount of times to take a derivative.
 # Returns: a floating point value
 def dF(f, x, n):
     if n <= 0:
         return f(x);
-    delta = 0.001;
-    ch_arr =  [];
-    func_arr = [];
-    v = 0;
-    for k in range(0, n + 1):
-        ch_arr.append(choose(n, k));
-        func_arr.append(f(x + k*delta));
-        v = v + ((-1)**(n + k))*ch_arr[k]*func_arr[k];
-    return v/(delta**n);
-
-
-
-
-# Name: The choose function.
-# Parameters: n, choose, k
-# Returns: a floating point value
-def choose(n, k):
-    Nume = factorial(n);
-    Denom = factorial(k)*factorial(n - k);
-    return Nume/Denom;
-
-
-
-
-# Name: Factorial
-# Parameters: takes a positive integer
-# Returns: a floating point value
-def factorial(n):
-    v = 1;
-    for i in range(1, n + 1):
-        v = v * i;
-    return v;
+    else:
+        h = 0.01;
+        return (dF(f, x + h, n - 1) - dF(f, x, n - 1)) / h;
 
 
 
