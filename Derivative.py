@@ -13,7 +13,7 @@ import numpy as np
 def FunctionDerivative(FUNC, start, end, DELTA, NUM_OF_dF):
 
 
-    # Name: The derivative of the inquired function, F.
+    # Name: The derivative of the inquired function, f.
     # Parameters: a function, f, a floating point value x, and the derivative n (n determines the amount of times to take a derivative.)
     # Returns: a floating point value
     def dF(f, x, n):
