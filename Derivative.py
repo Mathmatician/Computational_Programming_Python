@@ -17,7 +17,7 @@ def F(x):
 
 
 # Name: The derivative of the inquired function, F.
-# Parameters: a function, f, a floating point value x, and the derivative n (n determines the amount of times to take a derivative.
+# Parameters: a function, f, a floating point value x, and the derivative n (n determines the amount of times to take a derivative.)
 # Returns: a floating point value
 def dF(f, x, n):
     if n <= 0:
