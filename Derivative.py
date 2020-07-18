@@ -6,6 +6,12 @@
 import math
 import numpy as np
 
+
+
+
+# Name: Takes derivative of received function from starting point to end point
+# Parameters: a function, FUNC, starting value start, ending value end, increment value DELTA, and the derivative values NUM_OF_dF (NUM_OF_dF determines the amount of times to take a derivative.)
+# Returns: two arrays - x values and y values, with spacings of DELTA increments
 def FunctionDerivative(FUNC, start, end, DELTA, NUM_OF_dF):
 
 
