@@ -1,3 +1,8 @@
+# Author: Jerome Richards
+# Derivative
+#
+# Uses the least squres meathod to find a trend line
+
 import numpy as np
 import matplotlib.pyplot as plt
 import Read_Data as RD
