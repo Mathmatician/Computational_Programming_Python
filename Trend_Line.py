@@ -1,5 +1,5 @@
 # Author: Jerome Richards
-# Derivative
+# Trend Line
 #
 # Uses the least squres meathod to find a trend line
 
