@@ -1,7 +1,7 @@
 # Author: Jerome Richards
 # Derivative
 #
-# Description Takes the derivative of the given function, F(x), and compares it in a plot with the origional function.
+# Takes the derivative of a function of a set of points
 
 import math
 import numpy as np
