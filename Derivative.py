@@ -55,9 +55,11 @@ def DerivativeOfData(x_data, y_data):
         print('Both arrays must be the same length');
         return 0, 0;
 
+    x = [];
     y = [];
     for i in range(0, len(x_data) - 1):
         m = (y_data[i + 1] - y_data[i]) / (x_data[i + 1] - x_data[i]);
         y.append(m);
+        x.append(x_data[i]);
 
-    return x_data, y;
+    return x, y;
