@@ -110,11 +110,11 @@ def DiscreteCosineTransform(y_data, thresh):
 
 
 
-    #################
-    #               #
-    # Plot the data #
-    #               #
-    #################
+    #######################################
+    #                                     #
+    # Return new x and y points as arrays #
+    #                                     #
+    #######################################
     x_end = N - 1;
     dx = 0.01;
     x = [];
