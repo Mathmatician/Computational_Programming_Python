@@ -20,6 +20,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+
+# Description: Uses Cubic Spline interpolation on the given x and y data points
+# Parameters: data on the horizontal axis, x_data, and on the vertical axis, y_data
+# Returns: two arrays - x values and y values with calculated interpolation
 def SplineFunction(x_data, data):
     y_data = data; # Data on the y-axis
 
