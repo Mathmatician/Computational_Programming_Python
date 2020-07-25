@@ -20,7 +20,7 @@ def TrapezoidalOfData(x_data, f):
         delta = x_data[i + 1] - x_data[i];
         area = area + (delta/2)*( f[i] + f[i + 1] );
         y.append(area);
-        x.append(x_data[i + 1]);
+        x.append(x_data[i]);
     return x, y;
 
 
