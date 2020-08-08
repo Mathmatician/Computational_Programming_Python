@@ -236,7 +236,7 @@ def LogNormalBoundDistribution(data, x_0, x_f):
     avg = Average(log_data);
     std_dev = np.sqrt(v);
 
-    def GaussianFunction(x):
+    def LogNormalFunction(x):
         return (1 / (x * std_dev * np.sqrt(2*np.pi)) ) * np.exp( (-1/2)*( (math.log(x) - avg)/std_dev )**2 );
 
     x = [];
@@ -245,7 +245,7 @@ def LogNormalBoundDistribution(data, x_0, x_f):
     i = x_0;
     while i < x_f:
         x.append(i);
-        y.append(GaussianFunction(i));
+        y.append(LogNormalFunction(i));
         i = i + dx;
     return x, y;
 
