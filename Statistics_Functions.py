@@ -219,3 +219,35 @@ def EvaluateLargeExponent(x, pwr):
 
 
 
+
+
+
+
+
+# Description: Finds the spread of the data using the LogNormal Principle
+# Parameters: an array of data points, an initial point x_0, and an end point x_f
+# Returns: an array of the variance spread for each data point and a floating point number that is the variance value of the data set
+def LogNormalBoundDistribution(data, x_0, x_f):
+    log_data = [];
+    for i in range(0, len(data)):
+        log_data.append(math.log(data[i]));
+
+    tmp, v = Variance(log_data);
+    avg = Average(log_data);
+    std_dev = np.sqrt(v);
+
+    def GaussianFunction(x):
+        return (1 / (x * std_dev * np.sqrt(2*np.pi)) ) * np.exp( (-1/2)*( (math.log(x) - avg)/std_dev )**2 );
+
+    x = [];
+    y = [];
+    dx = 0.01;
+    i = x_0;
+    while i < x_f:
+        x.append(i);
+        y.append(GaussianFunction(i));
+        i = i + dx;
+    return x, y;
+
+
+
